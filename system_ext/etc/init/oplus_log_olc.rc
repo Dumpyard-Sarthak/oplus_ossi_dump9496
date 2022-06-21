@@ -1,0 +1,47 @@
+on post-fs-data
+    mkdir /data/persist_log 0755 system system
+    mkdir /data/persist_log/olc 0775 system system
+
+service olc_get_main_log /system/system_ext/bin/oplus_log_olc.sh "get_main_log"
+    class core
+    user system
+    group root system sdcard_rw shell everybody media_rw ext_data_rw
+    disabled
+    oneshot
+
+service olc_get_radio_log /system/system_ext/bin/oplus_log_olc.sh "get_radio_log"
+    class core
+    user system
+    group root system sdcard_rw shell everybody media_rw ext_data_rw
+    disabled
+    oneshot
+
+service olc_get_events_log /system/system_ext/bin/oplus_log_olc.sh "get_events_log"
+    class core
+    user system
+    group root system sdcard_rw shell everybody media_rw ext_data_rw
+    disabled
+    oneshot
+
+service olc_get_system_log /system/system_ext/bin/oplus_log_olc.sh "get_system_log"
+    class core
+    user system
+    group root system sdcard_rw shell everybody media_rw ext_data_rw
+    disabled
+    oneshot
+
+service olc_get_kernel_log /system/system_ext/bin/oplus_log_olc.sh "get_kernel_log"
+    class core
+    user system
+    group root system sdcard_rw shell everybody media_rw ext_data_rw
+    disabled
+    oneshot
+
+#add for copy logs. refer to oidtlogs
+service olc_copy_logs /system/system_ext/bin/oplus_log_olc.sh "copy_logs"
+    class core
+    user root
+    group root system shell sdcard_rw everybody media_rw ext_data_rw
+    seclabel u:r:dumpstate:s0
+    disabled
+    oneshot

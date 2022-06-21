@@ -1,0 +1,8 @@
+#================================audio related start========================================
+#ifdef OPLUS_BUG_COMPATIBILITY
+#Haiping.Bai@PSW.MM.AudioDriver, 2021/12/14, Add for SIXTH
+on post-fs-data
+    chown system audio /dev/sia81xx_tuning_if
+    chmod 0666 /dev/sia81xx_tuning_if
+#enif
+#================================audio related end==========================================

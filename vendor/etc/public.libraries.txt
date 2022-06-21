@@ -1,0 +1,5 @@
+libOpenCL.so
+vendor.mediatek.hardware.camera.isphal@1.0.so
+libarcsoft_dualcam_wt_calibration.so
+libarcsoft_dualcam_wt_verification.so
+libcalibverifyW_T.so

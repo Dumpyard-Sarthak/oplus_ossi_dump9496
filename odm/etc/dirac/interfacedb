@@ -1,0 +1,81 @@
+<InterfaceDb>
+  <Usecases>
+    <Usecase name="USECASE_INTERNAL_POWERSOUND">
+      <Parameters>
+        <Parameter id="3" name="Tonal Balance" defaultValue="0"/>
+      </Parameters>
+      <Modes>
+        <Mode name="Max volume">
+          <Parameter id="3" value="0"/>
+        </Mode>
+        <Mode name="Super volume">
+          <Parameter id="3" value="1"/>
+        </Mode>
+      </Modes>
+    </Usecase>
+    <Usecase name="USECASE_INTERNAL_PANORAMA">
+      <Parameters>
+        <Parameter id="3" name="Tonal Balance" defaultValue="0"/>
+      </Parameters>
+      <Modes>
+        <Mode name="Max volume">
+          <Parameter id="3" value="0"/>
+        </Mode>
+        <Mode name="Super volume">
+          <Parameter id="3" value="1"/>
+        </Mode>
+      </Modes>
+    </Usecase>
+    <Usecase name="USECASE_INTERNAL_CUSTOM1">
+      <Parameters>
+        <Parameter id="3" name="Tonal Balance" defaultValue="0"/>
+      </Parameters>
+      <Modes>
+        <Mode name="Max volume">
+          <Parameter id="3" value="0"/>
+        </Mode>
+        <Mode name="Super volume">
+          <Parameter id="3" value="1"/>
+        </Mode>
+      </Modes>
+    </Usecase>
+    <Usecase name="USECASE_INTERNAL_CUSTOM2">
+      <Parameters>
+        <Parameter id="3" name="Tonal Balance" defaultValue="0"/>
+      </Parameters>
+      <Modes>
+        <Mode name="Max volume">
+          <Parameter id="3" value="0"/>
+        </Mode>
+        <Mode name="Super volume">
+          <Parameter id="3" value="1"/>
+        </Mode>
+      </Modes>
+    </Usecase>
+    <Usecase name="USECASE_INTERNAL_COMMON">
+      <Parameters>
+        <Parameter id="3" name="Tonal Balance" defaultValue="0"/>
+      </Parameters>
+      <Modes>
+        <Mode name="Max volume.">
+          <Parameter id="3" value="0"/>
+        </Mode>
+        <Mode name="Super volume">
+          <Parameter id="3" value="1"/>
+        </Mode>
+      </Modes>
+    </Usecase>
+    <Usecase name="EXT_HEADSET">
+      <Parameters/>
+      <Modes/>
+    </Usecase>
+    <Usecase name="EXT_HEADSET_GAME">
+      <Parameters/>
+      <Modes/>
+    </Usecase>
+    <Usecase name="EXT_HEADSET_COMMON">
+      <Parameters/>
+      <Modes/>
+    </Usecase>
+  </Usecases>
+</InterfaceDb>

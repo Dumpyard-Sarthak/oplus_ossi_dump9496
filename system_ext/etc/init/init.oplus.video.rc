@@ -1,0 +1,26 @@
+on property:debug.oplus.video.log.switch=On
+
+on property:debug.oplus.video.log.switch=Off
+
+
+on property:debug.oplus.video.mtk.c2=0
+    start videologmtkc2off
+
+on property:debug.oplus.video.mtk.c2=1
+    start videologmtkc2on
+
+service videologmtkc2on /system/system_ext/bin/debugvideo_common.sh "videologmtkc2on"
+    class core
+    user root
+    group system root shell
+    seclabel u:r:debugvideo:s0
+    disabled
+    oneshot
+
+service videologmtkc2off /system/system_ext/bin/debugvideo_common.sh "videologmtkc2off"
+    class core
+    user root
+    group system root shell
+    seclabel u:r:debugvideo:s0
+    disabled
+    oneshot
